@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Property Details — KRUZAR Properties</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-black">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="logo-gold.png" alt="logo" class="logo-img"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="listings.html" class="active">Listings</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="burger" id="burgerBtn3" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container listing-detail">
+      <a class="back-link" href="listings.html">← Back to listings</a>
+
+      <div class="detail-grid">
+        <div class="gallery">
+          <img src="prop1.jpg" alt="Property image">
+          <!-- Add multiple images or a slider -->
+        </div>
+        <div class="details">
+          <h1>$1,850 / month</h1>
+          <p class="muted">2 Bed • 1 Bath • Easton, PA</p>
+          <p class="lead">A modern 2-bedroom apartment located within walking distance to parks, shops and transit. This unit features stainless appliances, in-unit laundry, and private parking.</p>
+
+          <ul class="amenities">
+            <li>In-unit laundry</li>
+            <li>Parking included</li>
+            <li>Pet friendly (case by case)</li>
+            <li>Smart lock &amp; thermostat</li>
+          </ul>
+
+          <div class="detail-actions">
+            <a href="contact.html#inquire" class="btn primary">Schedule a Visit</a>
+            <a href="mailto:info@kruzarproperties.com?subject=Inquiry%20about%20Listing%201" class="btn outline">Email Us</a>
+          </div>
+
+          <div class="map-placeholder muted">
+            <!-- You can replace with an embedded Google map -->
+            <p>Map placeholder — add embed here for address</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo-gold.png" alt="KRUZAR Properties" class="footer-logo">
+        <p class="muted">KRUZAR Properties — Stay Smart, Stay Kruzar</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:info@kruzarproperties.com">info@kruzarproperties.com</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="listings.html">Listings</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year3"></span> KRUZAR Properties. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
