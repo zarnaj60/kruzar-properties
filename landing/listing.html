@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Listings — KRUZAR Properties</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-black">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="logo-gold.png" alt="KRUZAR logo" class="logo-img"></a>
+      <nav class="nav" id="mainNav2">
+        <a href="index.html">Home</a>
+        <a href="listings.html" class="active">Listings</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="burger" id="burgerBtn2" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="section-title">Available Rentals</h1>
+
+      <!-- Filter bar -->
+      <div class="filters">
+        <label>
+          City
+          <select id="filterCity">
+            <option value="all">All</option>
+            <option value="easton">Easton</option>
+            <option value="bethlehem">Bethlehem</option>
+            <option value="allentown">Allentown</option>
+          </select>
+        </label>
+
+        <label>
+          Bedrooms
+          <select id="filterBeds">
+            <option value="all">Any</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+          </select>
+        </label>
+
+        <label>
+          Max Price
+          <select id="filterPrice">
+            <option value="all">No Max</option>
+            <option value="1600">$1,600</option>
+            <option value="2000">$2,000</option>
+            <option value="2500">$2,500</option>
+          </select>
+        </label>
+
+        <button class="btn outline" id="resetFilters">Reset</button>
+      </div>
+
+      <!-- Listings grid -->
+      <div class="cards-grid" id="listingsGrid">
+        <!-- Each card includes data attributes used for filtering -->
+        <article class="prop-card" data-city="easton" data-beds="2" data-price="1850">
+          <img src="prop1.jpg" alt="2BHK Easton">
+          <div class="card-body">
+            <h3>$1,850 / month — 2BHK • Easton</h3>
+            <p class="muted">Modern finishes, secure building.</p>
+            <div class="card-actions">
+              <a href="listing.html?id=1" class="btn small">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-city="bethlehem" data-beds="3" data-price="2300">
+          <img src="prop2.jpg" alt="3BHK Bethlehem">
+          <div class="card-body">
+            <h3>$2,300 / month — 3BHK • Bethlehem</h3>
+            <p class="muted">Townhouse, garage and backyard.</p>
+            <div class="card-actions">
+              <a href="listing.html?id=2" class="btn small">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-city="allentown" data-beds="1" data-price="1450">
+          <img src="prop3.jpg" alt="1BHK Allentown">
+          <div class="card-body">
+            <h3>$1,450 / month — 1BHK • Allentown</h3>
+            <p class="muted">Cozy unit, close to downtown.</p>
+            <div class="card-actions">
+              <a href="listing.html?id=3" class="btn small">View Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo-gold.png" alt="KRUZAR Properties" class="footer-logo">
+        <p class="muted">KRUZAR Properties — Stay Smart, Stay Kruzar</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:info@kruzarproperties.com">info@kruzarproperties.com</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="listings.html">Listings</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year2"></span> KRUZAR Properties. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
